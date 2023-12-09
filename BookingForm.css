@@ -1,0 +1,156 @@
+/* Styling for the entire form container */
+.body{
+background-color: #020202;
+}
+.booking-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form headings */
+.booking-form h2 {
+  font-size: 28px; /* Increase font size for better visibility */
+  margin: 0 0 20px;
+}
+
+/* Styles for form groups (labels and inputs) */
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  color: black;
+  padding: 12px; /* Increase padding for better visibility */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Increase font size for better visibility */
+  transition: border-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+/* Styling for seat selection */
+.seat-selection {
+  margin: 20px 0;
+}
+
+.seat-selection label {
+  display: block;
+  font-weight: bold;
+}
+
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat {
+  width: 60px; /* Increase size for better visibility */
+  height: 60px; /* Increase size for better visibility */
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+  background: linear-gradient(135deg, #8e9091, #0f1010);
+  color: #fff;
+}
+
+.seat:hover {
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  color: #fff;
+}
+
+/* Styles for the submit button */
+button {
+  display: block;
+  width: 100%;
+  padding: 20px; /* Increase padding for better appearance */
+  background: linear-gradient(135deg, #7c7d7e, #020202); /* Change button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px; /* Increase font size for better appearance */
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #484848, #0c0c0c);
+  font-size: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .booking-form {
+    max-width: 100%;
+  }
+
+  .form-group {
+    margin: 8px 0;
+  }
+}
+/* Styles for the available seats list */
+.div-avlbl {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avlbl-seats {
+  list-style: none;
+  padding: 0;
+}
+
+.avlbl-seat {
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.avlbl-seat:hover {
+  background: #0056b3;
+}
+
+/* Styles for the "No available seats" message */
+.div-avlbl p {
+  color: #333;
+  font-size: 18px;
+}
+
